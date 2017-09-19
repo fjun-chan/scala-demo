@@ -7,13 +7,6 @@ import org.apache.poi.hssf.usermodel.{HSSFSheet, HSSFWorkbook}
 import scala.collection.mutable
 import scala.collection.mutable.{ArrayBuffer, Map}
 
-/**
-  * 合并相似SQL
-  *
-  * @author 陈飞君（feijun.cfj@alibaba-inc.com)
-  * @version v1.0.0
-  * @since 2017-08-09
-  */
 object SQLStat {
   def main(args: Array[String]): Unit = {
     val list = readSQLs()
