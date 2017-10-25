@@ -56,6 +56,7 @@ object SQLStat {
     val workbook: HSSFWorkbook = new HSSFWorkbook(fis)
     val sheet: HSSFSheet  = workbook.getSheetAt(0)
     val list: ArrayBuffer[SQLInfo] = new ArrayBuffer[SQLInfo]()
+    /**
     sheet.rowIterator().forEachRemaining(row => {
       val sql = new SQLInfo(row.getCell(0).getStringCellValue,
         row.getCell(1).getNumericCellValue.toInt,
@@ -63,6 +64,7 @@ object SQLStat {
           .replaceAll("  ,", "").replaceAll("\\s+", " ").replaceAll(",,", "").replaceAll("nttt", "t"))
       list += sql
     })
+      */
     workbook.close()
     fis.close()
     list

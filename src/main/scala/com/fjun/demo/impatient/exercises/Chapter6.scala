@@ -2,7 +2,7 @@ package com.fjun.demo.impatient.exercises
 
 object Chapter6 {
   def main(args: Array[String]): Unit = {
-    val feline = new Cat with SmallTiger
+    val feline = new Cat with Tiger // with SmallTiger
     feline.say // Cat 和 Tiger 都与 say 方法, 调用时从右往左调用, 是 Tiger 在叫
     feline.king // 可以看到即使没有 cat 中没有 king 方法, Tiger 特质也能将自己的方法混入 Cat 中
 
